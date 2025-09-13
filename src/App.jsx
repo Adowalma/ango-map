@@ -42,8 +42,6 @@ function App() {
 
             <polygon className='link link-Cabinda' onClick={() => handleProvinceClick('Cabinda')} target="" alt="Cabinda" title="Cabinda" href="#" points="162,13,198,46,187,54,167,56,162,71,137,93,134,171,92,168,92,151,102,143,74,89,92,73,94,51,100,68,115,64,120,43,134,35,152,30" fill='transparent' stroke='white' strokeWidth="4" />
 
-            {/* <polygon className='link link-Cabinda' onClick={()=> handleProvinceClick('')} target="" alt="Cabinda" title="Cabinda" href="#" points="162,13,198,46,187,54,167,56,162,71,137,93,134,171,92,168,92,151,102,143,74,89,92,73,94,51,100,68,115,64,120,43,134,35,152,30" fill='transparent' stroke='white' strokeWidth="4" /> */}
-
             <polygon className='link link-Zaire' onClick={() => handleProvinceClick('Zaire')} target="" alt="Zaire" title="Zaire" href="#" points="107,213,147,204,182,186,333,183,361,184,398,184,425,228,413,238,405,259,373,268,368,276,350,276,333,299,315,296,308,308,280,312,287,322,300,331,293,344,307,367,292,374,272,384,258,396,233,387,217,401,203,401,182,336,179,312,134,259" fill='transparent' stroke='white' strokeWidth="4" />
 
             <polygon className='link link-Uíge' onClick={() => handleProvinceClick('Uíge')} target="" alt="Uíge" title="Uíge" href="#" points="401,184,608,183,616,208,628,216,636,279,647,296,657,342,674,356,657,372,643,387,618,354,593,356,579,376,548,382,558,437,544,440,538,452,521,444,518,425,499,432,481,430,466,417,450,425,450,447,436,457,416,450,415,464,381,469,386,455,381,445,395,435,393,415,371,420,358,412,338,407,325,387,292,382,308,369,295,344,300,329,283,312,308,311,315,297,332,301,350,277,370,276,376,266,405,264,415,236,425,223" fill='transparent' stroke='white' strokeWidth="4" />
@@ -86,7 +84,9 @@ function App() {
 
           </svg>
         </div>
+
         <ProvinceDetail key={selectedProvince?.vc_nome} provinceData={selectedProvince} localImage={ProvinceImage[selectedProvince?.vc_nome]} />
+        
       </div>
 
 

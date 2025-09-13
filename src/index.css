@@ -60,7 +60,7 @@ color: brown;
 }
 
 .link:active{
-  cursor: wait;
+  /* cursor: wait; */
 }
 .link-Luanda{
   fill:#d6c8ad!important;
