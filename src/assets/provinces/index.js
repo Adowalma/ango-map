@@ -16,21 +16,21 @@ import uige from './uige.png'
 import zaire from './zaire.png'
 
 
-export{
-  bengo,
-  cabinda,
-  cuando,
-  cuanzaNorte,
-  cuanzaSul,
-  cubango,
-  cunene,
-  icolo,
-  luanda,
-  lundaNorte,
-  lundaSul,
-  malange,
-  moxico,
-  moxicoLeste,
-  uige,
-  zaire,
+export const ProvinceImage = {
+'BENGO':bengo,
+'CABINDA':cabinda,
+'CUANDO':cuando,
+'CUANZA-NORTE':cuanzaNorte,
+'CUANZA-SUL':cuanzaSul,
+'CUBANGO':cubango,
+'CUNENE':cunene,
+'ICOLO E BENGO':icolo,
+'LUANDA':luanda,
+'LUNDA-NORTE':lundaNorte,
+'LUNDA-SUL':lundaSul,
+'MALANJE':malange,
+'MOXICO':moxico,
+'MOXICO LESTE':moxicoLeste,
+'UÍGE':uige,
+'ZAIRE':zaire,
 }

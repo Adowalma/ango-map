@@ -11,12 +11,15 @@
 body{
   background-color: #f0f2f5;
   font-family: 'Poppins', sans-serif;
+  height: fit-content;
+  padding-bottom: 20px;
 }
 .title{
   text-align: center;
   color: #000;
   text-transform: capitalize;
-  margin-block: 20px;
+  margin-top: 32px;
+  font-size: xx-large;
 }
 
 .angola-info{
@@ -49,12 +52,16 @@ color: brown;
 .link:hover{
   fill: #000 !important;
   opacity: 0.1;
+  cursor: pointer;
 }
 
 .link:focus{
   fill: #000 !important;;
 }
 
+.link:active{
+  cursor: wait;
+}
 .link-Luanda{
   fill:#d6c8ad!important;
 }
@@ -63,6 +70,17 @@ color: brown;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
+  margin-top: 30px;
+}
+
+.map-container{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-shadow: #e5e7ea 3px 3px 3px;
+  border-radius: 8px;
+  height:fit-content;
+  margin-inline: 20px;
 }
 
 .detail-content{
@@ -75,26 +93,34 @@ color: brown;
   border-radius: 8px;
   max-height: 80vh, fit-content;
   margin-right: 20px;
-}
 
-
-.map-container{
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  box-shadow: #e5e7ea 3px 3px 3px;
-  border-radius: 8px;
-  height:fit-content;
-  margin-inline: 20px;
-}
-
-.title{
-  font-size: xx-large;
-}
-
-.detail-content .description{
+  .not-empty-content{
+   img{
+    height: 290px;
+    border-radius: 4px;
+   }
+   span{
+    font-weight: 500;
+   }
+   .data{
+    display: flex;
+    text-align: start;
+    gap: 48px;
+    margin-top: 36px;
+    line-height: 1.7;
+   }
+  }
+  .empty-content .description{
   /* color: #dcb; */
-  color: rgb(130, 129, 129);
-  margin: 50px;
-  font-size: 24px;
+  color: rgb(154, 154, 154)!important;
+  margin: 10px;
+  font-size: 16px;
+}
+}
+
+.container .description{
+  margin-block: 24px;
+  margin-inline: 110px;
+  text-align: center;
+  color: rgb(100, 100, 100);
 }
